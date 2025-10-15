@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexcent | Lessons and Insights</title>
+  <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="image 1.png" alt="Nexcent Logo" />
+        <h2>Nexcent</h2>
+      </div>
+
+      <nav id="nav-links" class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Community</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <button class="register-btn mobile-btn">Register Now →</button>
+      </nav>
+
+      <button class="register-btn desktop-btn">Register Now →</button>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Lessons and insights<br><span>from 8 years</span></h1>
+        <p>Where to grow your business as a photographer: site or social media?</p>
+        <button class="register-btn">Register</button>
+      </div>
+
+      <div class="hero-image">
+        <img src="image 4 (2).png" alt="Lessons Illustration" />
+      </div>
+    </div>
+
+    <div class="slider">
+        <img src="Dot.png" alt="">
+    </div>
+  </section>
+  <section class="clients-section">
+  <div class="clients-container">
+    <h2>Our Clients</h2>
+    <p>We have been working with some Fortune 500+ clients</p>
+
+    <div class="clients-logos">
+      <img src="./logo01.png" alt="Client Logo 01">
+      <img src="./logoo02.png" alt="Client Logo 2">
+      <img src="./logo03.png" alt="Client Logo 3">
+      <img src="./logo04.png" alt="Client Logo 4">
+      <img src="./logo05.png" alt="Client Logo 5">
+      <img src="./logo06.png" alt="Client Logo 6">
+      <img src="./logo07.png" alt="Client Logo 7">
+    </div>
+  </div>
+</section>
+
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+
+</body>
+</html>

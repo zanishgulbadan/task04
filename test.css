@@ -1,0 +1,424 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  float: right;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #37a34a;
+}
+
+.register-btn {
+  background-color: #37a34a;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #2f8a3e;
+}
+
+.desktop-btn {
+  display: inline-block;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-color: #f8f9fb;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* TEXT */
+.hero-text {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+  color: #37a34a;
+}
+
+.hero-text p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.hero-text .register-btn {
+  font-size: 16px;
+  padding: 12px 35px;
+}
+
+/* IMAGE */
+.hero-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* ===================== MEDIA QUERIES ===================== */
+
+/* -------- Large tablets & small laptops (≤1200px) -------- */
+@media (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 48px;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+/* -------- Tablets (≤992px) -------- */
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-top: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+  }
+}
+
+
+
+
+
+
+.hero-section .slider {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+/* -------- Phones (≤768px) -------- */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-text p {
+    font-size: 14px;
+  }
+  .hero-text .register-btn {
+    padding: 10px 25px;
+  }
+  .hero-image img {
+    max-width: 300px;
+  }
+}
+
+/* -------- Small phones (≤480px) -------- */
+@media (max-width: 480px) {
+  .logo h2 {
+    font-size: 20px;
+  }
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  .hero-text h1 {
+    font-size: 26px;
+  }
+  .hero-text p {
+    font-size: 13px;
+  }
+  .hero-text .register-btn {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+  .hero-image img {
+    max-width: 240px;
+  }
+}
+
+
+
+
+
+/* ===== CLIENTS SECTION ===== */
+.clients-section {
+  padding: 50px 10%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.clients-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.clients-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* ===== LOGOS GRID ===== */
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.clients-logos img {
+  width: 50px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.clients-logos img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* ===== Large Screens (Laptops & Small Desktops ≤1200px) ===== */
+@media (max-width: 1200px) {
+  .clients-logos {
+    gap: 80px;
+  }
+
+  .clients-logos img {
+    width: 45px;
+  }
+}
+
+/* ===== Tablets (≤992px) ===== */
+@media (max-width: 992px) {
+  .clients-section {
+    padding: 40px 8%;
+  }
+
+  .clients-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .clients-container p {
+    font-size: 0.95rem;
+  }
+
+  .clients-logos {
+    gap: 60px;
+  }
+
+  .clients-logos img {
+    width: 40px;
+  }
+}
+
+/* ===== Small Tablets / Large Phones (≤768px) ===== */
+@media (max-width: 768px) {
+  .clients-section {
+    padding: 35px 6%;
+  }
+
+  .clients-logos {
+    gap: 40px;
+  }
+
+  .clients-logos img {
+    width: 38px;
+  }
+}
+
+/* ===== Mobile Phones (≤576px) ===== */
+@media (max-width: 576px) {
+  .clients-section {
+    padding: 30px 5%;
+  }
+
+  .clients-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .clients-container p {
+    font-size: 0.9rem;
+  }
+
+  .clients-logos {
+    gap: 25px;
+  }
+
+  .clients-logos img {
+    width: 32px;
+  }
+}
+
+/* ===== Very Small Devices (≤400px) ===== */
+@media (max-width: 400px) {
+  .clients-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .clients-container p {
+    font-size: 0.85rem;
+  }
+
+  .clients-logos {
+    gap: 20px;
+  }
+
+  .clients-logos img {
+    width: 28px;
+  }
+}
+
+
+
+
+
+
