@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ===== COMMUNITY SECTION ===== */
+.community-section {
+  padding: 80px 10%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.community-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.community-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* ===== CARDS GRID ===== */
+.community-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.community-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 40px 25px;
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.community-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.community-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.community-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large Tablets / Small Desktops */
+@media (max-width: 1024px) {
+  .community-section {
+    padding: 70px 8%;
+  }
+
+  .community-cards {
+    gap: 30px;
+  }
+
+  .community-card {
+    padding: 35px 20px;
+    max-width: 320px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .community-section {
+    padding: 60px 6%;
+  }
+
+  .community-container h2 {
+    font-size: 2rem;
+  }
+
+  .community-container p {
+    font-size: 0.95rem;
+  }
+
+  .community-card img {
+    width: 55px;
+  }
+
+  .community-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .community-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+  .community-section {
+    padding: 50px 5%;
+  }
+
+  .community-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .community-container p {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  .community-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .community-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 400px) {
+  .community-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .community-card img {
+    width: 50px;
+  }
+
+  .community-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .community-card p {
+    font-size: 0.85rem;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <section class="community-section">
+  <div class="community-container">
+    <h2>Manage your entire community<br>in a single system</h2>
+    <p>Who is Nexcent suitable for?</p>
+
+    <div class="community-cards">
+      <!-- Card 1 -->
+      <div class="community-card">
+        <img src="./membership-icon.png" alt="Membership Organisations">
+        <h3>Membership<br>Organisations</h3>
+        <p>
+          Our membership management software provides full automation
+          of membership renewals and payments
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="community-card">
+        <img src="./national-icon.png" alt="National Associations">
+        <h3>National<br>Associations</h3>
+        <p>
+          Our membership management software provides full automation
+          of membership renewals and payments
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="community-card">
+        <img src="./clubs-icon.png" alt="Clubs And Groups">
+        <h3>Clubs And<br>Groups</h3>
+        <p>
+          Our membership management software provides full automation
+          of membership renewals and payments
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
