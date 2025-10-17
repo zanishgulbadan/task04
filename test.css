@@ -687,6 +687,7 @@ body {
 .feature-image {
   flex: 1 1 50%;
   text-align: left;
+  margin-bottom: 80px;
 }
 
 .feature-image img {
@@ -716,7 +717,7 @@ body {
 
 .feature-content p {
   font-size: 0.9rem;
-  color: #666;
+  color: #464444;
   line-height: 1.5;
   margin-bottom: 30px;
   margin-left: -40px;
@@ -733,6 +734,7 @@ body {
   border-radius: 6px;
   transition: background 0.3s ease;
   margin-left: -40px;
+  margin-bottom: 100px;
 }
 
 .learn-btn:hover {
@@ -831,7 +833,7 @@ body {
 .stats-section {
   width: 100%;
   background-color: #f9fafb;
-  padding: 70px 10%;
+  padding: 70px 10px;
   box-sizing: border-box;
 
 }
@@ -974,4 +976,539 @@ body {
   .stat-item h3 {
     font-size: 1.2rem;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Signup Section ===== */
+.signup-section {
+  width: 100%;
+  padding: 50px 8%;
+  background: white;
+  
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* ===== Image Side ===== */
+.image-box {
+   display: flex-start;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 700px;
+  height: 430px;
+ 
+}
+
+/* ===== Text Side ===== */
+.text-box {
+  
+}
+
+.text-box h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.text-box p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #17af4a;
+  color: #fff;
+  padding: 15px 29px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #21a366;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .signup-section {
+    padding: 80px 6%;
+  }
+
+  .text-box h2 {
+    font-size: 30px;
+  }
+
+  .text-box p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-box {
+    order: -1;
+  }
+
+  .text-box h2 {
+    font-size: 28px;
+  }
+
+  .text-box p {
+    font-size: 15px;
+    text-align: justify;
+    margin: 0 auto 30px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box h2 {
+    font-size: 24px;
+  }
+
+  .text-box p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 22px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Customer Section ===== */
+.customer-showcase {
+  width: 100%;
+  padding: 30px 5%;
+  background-color: #f8f9fb;
+}
+
+.customer-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+/* ===== Left Main Logo ===== */
+.customer-logo {
+  flex: 0 0 340px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+  
+}
+
+.customer-logo img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  height: auto;
+  
+}
+
+/* ===== Right Content ===== */
+.customer-details {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.customer-text {
+  font-size: 18px;
+  color: #6e6b6b;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.customer-name {
+  color: #27ae60;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.customer-title {
+  color: #777;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+/* ===== Bottom Logos Row ===== */
+.partner-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.partner-logos img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.partner-logos img:hover {
+  transform: scale(1.1);
+}
+
+.meet-all {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: -10px;
+  display: flex;
+  
+}
+
+.meet-all:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .customer-showcase {
+    padding: 60px 6%;
+  }
+
+  .customer-logo img {
+    max-width: 280px;
+  }
+
+  .customer-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .customer-logo {
+    margin-bottom: 30px;
+  }
+
+  .customer-details {
+    text-align: center;
+  }
+
+  .partner-logos {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .meet-all {
+    justify-content: center;
+    margin: 15px auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-text {
+    font-size: 14px;
+  }
+
+  .partner-logos img {
+    width: 40px;
+  }
+
+  .customer-name {
+    font-size: 17px;
+  }
+
+  .meet-all {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Section Styling ===== */
+.marketing-section {
+  text-align: center;
+  padding: 50px 10px;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 0px;
+}
+
+.marketing-section h2 {
+  font-size: 34px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-left: 350px;
+}
+
+.marketing-section p {
+   color: #6e6b6b;
+  font-size: 17px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.4;
+}
+
+/* ===== Card Layout ===== */
+.cards {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  width: 365px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* ===== Overlapping Box ===== */
+.card-content {
+  position: relative;
+  top: -50px;
+  background-color: #f8f9fb;
+  border-radius: 10px;
+  padding: 20px 0px;
+  margin: 0 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-content h3 {
+  font-size: 18px;
+  color: #6e6b6b;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  color: #34a853;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+
+/* ===== Responsive Design ===== */
+
+/* ---------- Tablets (≤ 992px) ---------- */
+@media (max-width: 992px) {
+  .marketing-section {
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .marketing-section h2 {
+    font-size: 30px;
+    margin: 0 auto 15px;
+  }
+
+  .marketing-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto 40px;
+    max-width: 90%;
+  }
+
+  .cards {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+
+/* ---------- Small Tablets / Large Phones (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .marketing-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .marketing-section h2 {
+    font-size: 26px;
+    margin: 0 auto 15px;
+  }
+
+  .marketing-section p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 auto 40px;
+    max-width: 95%;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .card-content {
+    top: -40px;
+    padding: 18px 10px;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .read-more {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Mobile Phones (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .marketing-section {
+    padding: 40px 15px;
+  }
+
+  .marketing-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .marketing-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 auto 35px;
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .card-content {
+    top: -35px;
+    padding: 15px 8px;
+  }
+
+  .card-content h3 {
+    font-size: 15px;
+  }
+
+  .read-more {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+.second-last-section{
+  text-align: center;
+  padding: 40px 10px;
+  background-color: #f8f9fb;
+
+  
+}
+
+.bold-text h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  margin-bottom: 30px;
 }
